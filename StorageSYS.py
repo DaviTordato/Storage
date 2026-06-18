@@ -49,6 +49,8 @@ def search():
             if chose == '1':
                 newvalue = int(input("New value: "))
                 item[1] = newvalue
+
+                # Idk but if you want to delete some item use this bag of potatos
                 # lista.remove(item)
                 # id2 = 0
                 # for list_item in lista:
