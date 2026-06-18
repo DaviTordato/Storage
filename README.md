@@ -1,10 +1,18 @@
 # Storage
 Storage system for Python.
+Beta 1.4.5
+All working right in this version
 
-#add a product check
-#list all products check
-#Search for id check
-#Modify the stock check
-#exit the program check
-#Commit all in parts ok
-#Main list yess
+Functions:
+---
+add a product with:
+Id
+Local
+Quantity
+Name
+---
+list the list of products
+---
+search for a product by ID, and can modfiy his quantity
+---
+Code with some else to make the code dont break
