@@ -12,12 +12,22 @@ def s():
 ID = 0
 lista = []
 
+def patch():
+    id2 = 0
+    for list_item in lista:
+        list_item[0] = id2
+        id2 += 1
+    print("The ids of the items was fixed")
+    k()
 def listing():
     c()
     for items in lista:
         s()
         print(f"ID: {items[0]}\n Amout: {items[1]}\n location: {items[2]}\n Name: {items[3]}")
     s()
+    for items2 in lista:
+        if items2[1] < 5:
+            print(f"Attention! the quantity of the item '{items2[3]}' is less than 5 🔴")
     k()
 
 def add():
@@ -68,7 +78,7 @@ def search():
 
 while True:
     c()
-    chose = input("Hello, What you wanna do??\n1-add\n2-list every thing\n3-Search for ID\n4-Exit\n").strip().lower()
+    chose = input("Hello, What you wanna do?\n1-add\n2-list every thing\n3-Search for ID\n4-fix the IDs\n5-Exit\n").strip().lower()
     if chose == '1':
         add()
     elif chose == '2':
@@ -76,8 +86,10 @@ while True:
     elif chose == '3':
         search()
     elif chose == '4':
+        patch()
+    elif chose == '5':
         c()
-        print("Bye Bye")
+        print("Bye Bye ;)")
         break
     else:
         input('ERROR')
