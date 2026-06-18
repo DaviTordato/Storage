@@ -5,6 +5,6 @@ Storage system for Python.
 #list all products check
 #Search for id check
 #Modify the stock check
-#exit the program not checked david you lazzy dumb
+#exit the program check
 #Commit all in parts ok
 #Main list yess
