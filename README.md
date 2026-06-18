@@ -6,6 +6,7 @@ All working right in this version
 Functions:
 ___
 add a product with:
+
 Id
 Local
 Quantity
