@@ -31,14 +31,15 @@ def listing():
     k()
 
 def add():
-    global ID
-    adiction1 = ID
-    adiction2 = int(input("Quantia do produto: "))
-    adiction3 = input("Localização do produto: ").lower().strip()
-    adiction4 = input("Nome: ")
-    lista.append([adiction1, adiction2, adiction3,adiction4])
-    ID += 1
+        global ID
+        adiction1 = ID
+        adiction2 = int(input("Quantia do produto: "))
+        adiction3 = input("Localização do produto: ").lower().strip()
+        adiction4 = input("Nome: ")
+        lista.append([adiction1, adiction2, adiction3,adiction4])
+        ID += 1
 
+        #print("Error")
 # pesquisar por id
 
 def search():
@@ -77,21 +78,23 @@ def search():
     k()
 
 while True:
-    c()
-    chose = input("Hello, What you wanna do?\n1-add\n2-list every thing\n3-Search for ID\n4-fix the IDs\n5-Exit\n").strip().lower()
-    if chose == '1':
-        add()
-    elif chose == '2':
-        listing()
-    elif chose == '3':
-        search()
-    elif chose == '4':
-        patch()
-    elif chose == '5':
+    try:
         c()
-        print("Bye Bye ;)")
-        break
-    else:
-        input('ERROR')
-
+        chose = input("Hello, What you wanna do?\n1-add\n2-list every thing\n3-Search for ID\n4-fix the IDs\n5-Exit\n").strip().lower()
+        if chose == '1':
+            add()
+        elif chose == '2':
+            listing()
+        elif chose == '3':
+            search()
+        elif chose == '4':
+            patch()
+        elif chose == '5':
+            c()
+            print("Bye Bye ;)")
+            break
+        else:
+            input('ERROR')
+    except:
+            input('err')
 # Really boring code made by David - DTM
