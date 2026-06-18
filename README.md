@@ -8,9 +8,13 @@ ___
 add a product with:
 
 Id
+
 Local
+
 Quantity
+
 Name
+
 ___
 list the list of products
 ___
