@@ -68,12 +68,18 @@ def search():
 
 while True:
     c()
-    chose = input("Hello, What you wanna do??\n1-add\n2-list every thing\n3-Search for ID\n").strip().lower()
+    chose = input("Hello, What you wanna do??\n1-add\n2-list every thing\n3-Search for ID\n4-Exit\n").strip().lower()
     if chose == '1':
         add()
     elif chose == '2':
         listing()
     elif chose == '3':
         search()
+    elif chose == '4':
+        c()
+        print("Bye Bye")
+        break
     else:
         input('ERROR')
+
+# Really boring code made by David - DTM
