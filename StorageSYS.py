@@ -1,3 +1,5 @@
+import()
+
 #add a product
 #list all products
 #Search for id
@@ -19,7 +21,7 @@ def add():
 
 def Search():
     for items in lista:
-        print(f"ID: {items[0]} Amout: {items[1]} Name: {items[2]}")
+        print(f"ID: {items[0]}\n Amout: {items[1]}\n location: {items[2]}")
 #-----------------------
 
 #use this as the main loop
