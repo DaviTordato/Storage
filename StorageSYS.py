@@ -45,15 +45,17 @@ def search():
             item_found = True
             c()
             print(f"ID: {item[0]}\n Amout: {item[1]}\n location: {item[2]}\n Name: {items[3]}\n")
-            chose = input("What you wanna do?\n1-Delete\n")
+            chose = input("What you wanna do?\n1-Quantity\n")
             if chose == '1':
-                lista.remove(item)
-                id2 = 0
-                for list_item in lista:
-                    list_item[0] = id2
-                    id2 += 1
-                else:
-                    break
+                newvalue = int(input("New value: "))
+                item[1] = newvalue
+                # lista.remove(item)
+                # id2 = 0
+                # for list_item in lista:
+                #     list_item[0] = id2
+                #     id2 += 1
+                # else:
+                #     break
             else:
                 break
     
